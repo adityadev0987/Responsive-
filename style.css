@@ -64,13 +64,113 @@ main #top #top2 #text button {
   color: white;
   font-size: 15px;
 }
+main #mid1 {
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 1rem;
+  padding: 1rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+main #mid1 small {
+  font-size: 1rem;
+  opacity: 0.4;
+}
+main #mid1 h4 {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+main #mid1 #element1,
+main #mid1 #element2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main #mid2, main #mid3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  max-width: 1800px;
+}
+main #mid2 #block1 img, main #mid3 #block1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+main #mid2 #block2, main #mid3 #block2 {
+  background-color: #1E1E1E;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 1rem;
+  gap: 10rem;
+  color: white;
+}
+main #mid2 #block2 h4, main #mid3 #block2 h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main #mid2 #block2 #text h1, main #mid3 #block2 #text h1 {
+  font-size: 45px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+main #mid2 #block2 #text #para, main #mid3 #block2 #text #para {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 200;
+  opacity: 0.4;
+}
 
 @media (min-width: 1000px) {
   main #top {
-    display: flex;
     flex-direction: row;
+    padding: 0.5rem;
   }
-  main #top #top1, main #top #top2 {
+  main #top #top1,
+  main #top #top2 {
     width: 50%;
+  }
+  main #top #top2 {
+    padding: 1rem 4rem;
+  }
+  main #top #top2 #text h1 {
+    font-size: 60px;
+  }
+  main #top #top2 #text p {
+    opacity: 0.4;
+  }
+  main #mid1 {
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+  }
+  main #mid2, main #mid3 {
+    padding: 0.5rem;
+  }
+  main #mid2 #block1,
+  main #mid2 #block2, main #mid3 #block1,
+  main #mid3 #block2 {
+    width: 50%;
+  }
+  main #mid2 #block2 #text h1, main #mid3 #block2 #text h1 {
+    font-size: 60px;
+  }
+  main #mid2 #block2 #text #para, main #mid3 #block2 #text #para {
+    display: flex;
+    gap: 1.6rem;
+  }
+  main #mid2 {
+    flex-direction: row-reverse;
+  }
+  main #mid3 {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
